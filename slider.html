@@ -1,426 +1,708 @@
+<style>
+  			.full-width-carousel{
+					width: 100%;
+					position: relative;
+					background: black;
+					height: 0;
+					margin-bottom: 160px;
+				}
+        .carousel-image {
+            width: 100%;
+            height: 450px;
+        }
+
+				.full-width-carousel-inner{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+
+				.full-width-carousel-dummy{
+					position: relative;
+					margin: 0 30px;
+					height: 100%;
+				}
+
+				.full-width-carousel-item{
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					display: block;
+					overflow: hidden;
+					text-decoration: none;
+					-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+					filter: alpha(opacity=40);
+					-moz-opacity: 0.4;
+					-khtml-opacity: 0.4;
+					opacity: 0.4;
+					-webkit-transition: opacity .4s linear;
+					-moz-transition: opacity .4s linear;
+					-ms-transition: opacity .4s linear;
+					-o-transition: opacity .4s linear;
+					transition: opacity .4s linear;
+				}
+
+				.full-width-carousel-item-inner{
+					width: 100%;
+					height: 100%;
+				}
+
+
+
+				.full-width-carousel .current{
+					-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+					filter: alpha(opacity=100);
+					-moz-opacity: 1;
+					-khtml-opacity: 1;
+					opacity: 1;
+				}
+
+				.a-full-width-carousel-right, .a-full-width-carousel-left, .a-shop-carousel-right{
+					width: 24px;
+					height: 47px;
+					-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+					filter: alpha(opacity=80);
+					-moz-opacity: 0.8;
+					-khtml-opacity: 0.8;
+					opacity: 0.8;
+					-webkit-transition: opacity .2s linear;
+					-moz-transition: opacity .2s linear;
+					-ms-transition: opacity .2s linear;
+					-o-transition: opacity .2s linear;
+					transition: opacity .2s linear;
+				}
+
+				.featured-carousel{
+					margin-top: 10px;
+					padding-bottom: 48%;
+				}
+				.featured-carousel h2{
+					position: flex;
+					top: 67%;
+					width: 96%;
+					left: 2%;
+					text-align: center;
+					font-weight: normal;
+					font-family: serif;
+					font-size: 31px;
+					line-height: 21px;
+					color: rgb(247,238,219);
+					text-transform: none;
+				}
+
+				.featured-carousel-bg{
+					background: rgba(0, 0, 0, 0.3);
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+
+					.a-news-newer, .a-news-older, .a-news-newer:visited, .a-news-older:visited{
+						width: 100px;
+						line-height: 16px;
+					}
+				}
+
+				.releases-carousel > .current{
+					display: block;
+				}
+
+				.carousel-release{
+					width: 216px;
+					height: 216px;
+					position: absolute;
+					top: 72px;
+					right: -216px;
+					z-index: 1;
+					background: #000;
+				}
+
+				.carousel-release img{
+					width: 100%;
+					height: 100%;
+				}
+
+					.featured-carousel{
+						height: 400px;
+						margin-bottom: 27px;
+					}
+
+					.full-width-carousel{
+						padding-bottom: 0;
+					}
+
+					.full-width-carousel-inner{
+						max-width: 1130px;
+						margin: 0 auto;
+						position: static;
+						width: auto;
+					}
+
+					.full-width-carousel-dummy{
+						position: relative;
+						margin: 0 220px;
+					}
+
+					.full-width-carousel-item-inner{
+						width: 690px;
+						position: absolute;
+						top: 0;
+						left: 50%;
+						margin-left: -345px;
+					}
+
+					.a-full-width-carousel-right, .a-full-width-carousel-left, .a-shop-carousel-right{
+						width: 24px;
+						height: 47px;
+						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+						filter: alpha(opacity=80);
+						-moz-opacity: 0.8;
+						-khtml-opacity: 0.8;
+						opacity: 0.8;
+						-webkit-transition: opacity .2s linear;
+						-moz-transition: opacity .2s linear;
+						-ms-transition: opacity .2s linear;
+						-o-transition: opacity .2s linear;
+						transition: opacity .2s linear;
+					}
+					
+					.a-full-width-carousel-right, .a-full-width-carousel-left{
+						position: absolute;
+						top: 50%;
+						z-index: 15;
+						margin-top: -24px;
+					}
+					
+					.a-full-width-carousel-right:hover, .a-full-width-carousel-left:hover, .a-shop-carousel-right:hover{
+						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+						filter: alpha(opacity=100);
+						-moz-opacity: 1;
+						-khtml-opacity: 1;
+						opacity: 1;
+					}
+					
+					.a-full-width-carousel-left{
+						background-position: 0 0;
+						left: 2px;
+					}
+					
+					.a-full-width-carousel-right{
+						background-position: -24px 0;
+						right: 2px;
+					}
+					.fa-chevron-left {
+						padding-left: 10px;
+					}
+					.fa-chevron-right {
+						padding-right: 50px;
+					}
+					a, a:hover, a:active, a:visited, a:focus {
+						text-decoration:none;
+				}
+					.h2-tagline {
+							font-size: 11px;
+							line-height: 15px;
+							width: auto;
+							margin-left: 23%;
+							font-family: Poppins;
+							letter-spacing: 0.15em;
+							color: #191762;
+					}
+		
+					@media screen and (min-width: 101px) and (max-width: 550px)
+					 {
+							.full-width-carousel-inner{
+								 display: none; 
+								
+							}   
+							.full-width-carousel {
+								background: transparent;
+							}
+						}
+</style>
+
+<div class="featured-carousel full-width-carousel">
+  <div class="full-width-carousel-inner">
+    <div class="full-width-carousel-dummy">
+            <a href="" class="current full-width-carousel-item" data-i="0">
+		        <div class="full-width-carousel-item-inner">
+                <img class="carousel-image" src="https://bluequotetestdeploy.000webhostapp.com/wp-content/uploads/2018/04/VladimirKostadinov-e1525623068573.jpg" alt="Vladimir Kostadinov"/>
+        </div>
+        <div class="featured-carousel-bg">
+						<h2 class="carousel-caption">Vladimir Kostadinov</h2>
+					</div>
+		      </a>
+            <a href="" class="full-width-carousel-item" data-i="1">
+		        <div class="full-width-carousel-item-inner">
+          <img class="carousel-image" src="https://bluequotetestdeploy.000webhostapp.com/wp-content/uploads/2018/01/lejla3-e1525623186409.jpg" alt=""/>
+        </div>
+        <div class="featured-carousel-bg">
+						<h2 class="carousel-caption">Placeholder 2</h2>
+					</div>
+		      </a>
+            <a href="" class="full-width-carousel-item" data-i="2">
+		        <div class="full-width-carousel-item-inner">
+          <img class="carousel-image" src="https://bluequotetestdeploy.000webhostapp.com/wp-content/uploads/2018/01/lejla2.jpg" alt=""/>
+        </div>
+        <div class="featured-carousel-bg">
+						<h2 class="carousel-caption">Placeholder 3</h2>
+					</div>
+		      </a>
+            <a href="" class="full-width-carousel-item" data-i="3">
+		        <div class="full-width-carousel-item-inner">
+          <img class="carousel-image" src="https://bluequotetestdeploy.000webhostapp.com/wp-content/uploads/2018/01/lejla1.jpg" alt="" />
+        </div>
+        <div class="featured-carousel-bg">
+						<h2 class="carousel-caption">Placeholder 4</h2>
+					</div>
+		      </a>
+            <a href="" class="full-width-carousel-item featured-video" data-i="4">
+
+		        <div class="full-width-carousel-item-inner">
+          <img class="carousel-image" src="https://bluequotetestdeploy.000webhostapp.com/wp-content/uploads/2018/01/lejla4.jpg" alt=""/>
+        </div>
+        <div class="featured-carousel-bg">
+						<h2 class="carousel-caption">Placeholder 5</h2>
+
+	        		</div>
+		      </a>
+  </div>
+	<!--Scripts-->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/jquery-hammerjs@2.0.0/jquery.hammer.min.js"></script>
+  
 <script defer>   
-    let animating = false;
-    let player = null;
+  let animating = false;
+  let player = null;
 
-    let carouselItems = 0;
+  let carouselItems = 0;
 
-    let releasePages = 0;
+  let releasePages = 0;
 
-    $(document).ready(function(){
+  $(document).ready(function(){
 
-      if ($('.artist-releases').length){
-        // Sort out the release paging.
-        $i = 0;
-        $('.artist-releases').each(function(){
-          if ($i !== 0){
-            $(this).hide();
-          }
-          else{
-            $(this).addClass('current');
-          }
-          $(this).attr('data-page', $i+1);
-
-          $i++;
-        });
-
-        $('.right-col-releases').append('<div class="release-navigation" data-pages="'+$i+'"></div>');
-        if ($i > 1){
-          releasePages = $i;
-
-          $('.right-col-releases').find('.release-navigation').append('<a href="#" class="a-release-left ir disabled" data-page="">Left</a>');
-          $('.right-col-releases').find('.release-navigation').append('<a href="#" class="a-release-right ir" data-page="2">Right</a>');
-
-          $('.a-release-left').click(function(event){
-            event.preventDefault();
-
-            if (!animating && !$(this).hasClass('disabled')){
-              console.log('blah1');
-              animating = true;
-              let page = parseInt($(this).attr('data-page'), 10);
-
-              $('.artist-releases.current').fadeOut(function(){
-                $('.a-release-right').removeClass('disabled').show().attr('data-page', page+1);
-                if (page == 1){
-                  $('.a-release-left').addClass('disabled').hide();
-                }
-                else{
-                  $('.a-release-left').attr('data-page', page-1);
-                }
-
-                $('.artist-releases[data-page="'+page+'"]').fadeIn(function(){
-                  animating = false;
-                }).addClass('current');
-              }).removeClass('current');
-            }
-          }).hide();
-
-          $('.a-release-right').click(function(event){
-            event.preventDefault();
-
-            if (!animating && !$(this).hasClass('disabled')){
-              console.log('blah2');
-              animating = true;
-              let page = parseInt($(this).attr('data-page'), 10);
-
-              $('.artist-releases.current').fadeOut(function(){
-                $('.a-release-left').removeClass('disabled').show().attr('data-page', page-1);
-                if (page == releasePages){
-                  $('.a-release-right').addClass('disabled').hide();
-                }
-                else{
-                  $('.a-release-right').attr('data-page', page+1);
-                }
-
-                $('.artist-releases[data-page="'+page+'"]').fadeIn(function(){
-                  animating = false;
-                }).addClass('current');
-              }).removeClass('current');
-            }
-          });
-        }
-
-        $('.release-height').css({
-          minHeight: ($('.right-col-releases').height()+90)+'px'
-        });
-
-      }
-      $('.release-links .a-release-link').live('click', function(event){
-        console.log('here');
-        $(this).closest('.release-links').addClass('show');
-      });
-
-      if (typeof EMIBuyButton != 'undefined'){
-        $('body').bind('click', function(event) { EMIBuyButton.hideAllMenus(event); $('.release-links.show').removeClass('show'); });
-      }
-
-
-      $('.menu').click(function(event){
-        event.stopPropagation();
-      });
-
-      // Artist carousel.
-      $('.a-carousel-left').click(function(event){
-        event.preventDefault();
-
-        if (!animating){
-          animating = true;
-          $('.artist-carousel-container').animate({
-            scrollLeft: $('.artist-carousel-container').scrollLeft() - $('.central-col').width()
-          }, 400, function(){
-            animating = false;
-          });
-        }
-      });
-
-      $('.a-carousel-right').click(function(event){
-        event.preventDefault();
-
-        if (!animating){
-          animating = true;
-          $('.artist-carousel-container').animate({
-            scrollLeft: $('.artist-carousel-container').scrollLeft() + $('.central-col').width()
-          }, 400, function(){
-            animating = false;
-          });
-        }
-      });
-
-      $('.menu-link, .h2-menu-close').click(function(event){
-        event.preventDefault();
-
-        if ($('.menu').position().left === 0){
-          $('.menu').css('left', '-280px');
+    if ($('.artist-releases').length){
+      // Sort out the release paging.
+      $i = 0;
+      $('.artist-releases').each(function(){
+        if ($i !== 0){
+          $(this).hide();
         }
         else{
-          $('.menu').css('left', 0);
+          $(this).addClass('current');
         }
+        $(this).attr('data-page', $i+1);
+
+        $i++;
       });
 
-      $(".menu").hammer({
-        swipe_time: 500,
-        drag: false,
-        tap: false,
-        transform: false
-      }).bind("swipe", function(ev) {
-        if (ev.direction == "left" && $(window).width() < 800) {
-          $('.menu').css('left', '-280px');
-        }
-      });
+      $('.right-col-releases').append('<div class="release-navigation" data-pages="'+$i+'"></div>');
+      if ($i > 1){
+        releasePages = $i;
 
-      $('.a-shop-carousel-right').click(function(event){
-        event.preventDefault();
+        $('.right-col-releases').find('.release-navigation').append('<a href="#" class="a-release-left ir disabled" data-page="">Left</a>');
+        $('.right-col-releases').find('.release-navigation').append('<a href="#" class="a-release-right ir" data-page="2">Right</a>');
 
-        if (!animating){
-          animating = true;
-          $('.shop-carousel-container').animate({
-            scrollLeft: '123px'
-          }, 200, function(){
-            $('.shop-carousel-inner a:first-child').appendTo($('.shop-carousel-inner'));
-            $('.shop-carousel-container').scrollLeft(0);
-            animating = false;
-          });
-        }
-      });
-
-      if ($(window).width() < 800){
-        $('.menu').height($(window).height()+100);
-      }
-      $(window).resize(function(){
-        $('.artist-carousel-container').scrollLeft(0);
-        if ($(window).width() < 800){
-          $('.menu').height($(window).height());
-        }
-        else{
-          $('.menu').height('auto');
-        }
-      });
-
-      // Subscribe form
-      $('.form-subscribe').submit(function(event){
-        let error = false;
-        let dob = new Date(parseInt($('select[name="year"]').val(), 10), parseInt($('select[name="month"]').val(), 10), parseInt($('select[name="day"]').val(), 10));
-        let thriteenYears = new Date();
-        thriteenYears.setTime(thriteenYears.valueOf() - 13 * 365 * 24 * 60 * 60 * 1000);
-        if ($('input[name="email"]').val() === '' || !isEmail($('input[name="email"]').val())){
-          error = true;
-          $('input[name="email"]').focus();
-          showFormError('You must enter a valid email.');
-        }
-        else if ($('input[name="fname"]').val() === ''){
-          error = true;
-          $('input[name="fname"]').focus();
-          showFormError('You must enter your name.');
-        }
-        else if ($('select[name="country"]').val() === ''){
-          error = true;
-          showFormError('You must select your country.');
-        }
-        else if (isNaN(dob.getTime())){
-          error = true;
-          showFormError('You must enter a valid birthday.');
-        }
-        else if (dob > thriteenYears){
-          error = true;
-          showFormError('You must be older than 13 years old to subscribe.');
-        }
-
-        if (error){
+        $('.a-release-left').click(function(event){
           event.preventDefault();
-        }
-      });
 
-      // Full width carousel.
-      if ($('.full-width-carousel').length){
-        let i = 0;
-        let vids = 0;
-        carouselItems = $('.full-width-carousel-item').length;
-        $('.full-width-carousel-item:not(.clone)').each(function(){
-          // Don't move the first.
-          if (i > 0){
-            $(this).css({
-              left: (i*100)+'%'
-            });
-          }
+          if (!animating && !$(this).hasClass('disabled')){
+            console.log('blah1');
+            animating = true;
+            let page = parseInt($(this).attr('data-page'), 10);
 
-          let clone = null;
-          if (carouselItems > 1){
-            // Create a duplicate and place it on the left.
-            clone = $(this).clone().removeClass('current').addClass('clone').css({
-              left: ((i-carouselItems)*100)+'%'
-            });
-            clone.appendTo('.full-width-carousel-dummy');
-          }
-
-          if ($(this).hasClass('featured-video')){
-            $(this).find('.responsive_video').attr('id', 'video-'+vids).attr('data-vid', vids);
-            vids++;
-            if (clone !== null){
-              clone.find('.responsive_video').attr('id', 'video-'+vids).attr('data-vid', vids);
-              vids++;
-            }
-          }
-
-          i++;
-
-          if (i == carouselItems){
-            $('.full-width-carousel-item').click(function(event){
-              if (!animating && !$(this).hasClass('current')){
-                event.preventDefault();
-
-                animating = true;
-
-                let left = $(this).position().left;
-                let width = $(this).width();
-                let move = left / width;
-                let item = $(this);
-                $('.full-width-carousel-dummy').animate({
-                  left: -(width*move)+'px'
-                }, 400, function(){
-                  $('.full-width-carousel-dummy').css({
-                    left: ''
-                  });
-                  $('.full-width-carousel-item').each(function(){
-                    let leftItem = $(this).position().left;
-                    let pc = leftItem / width;
-                    $(this).css({
-                      left: ((pc-move)*100)+'%'
-                    });
-                  });
-
-                  $('.full-width-carousel-item.current').removeClass('current');
-                  item.addClass('current');
-
-                  // Move the last element to the other side.
-                  let itemIdx = item.attr('data-i');
-                  let clone = null;
-                  if (move > 0){
-                    itemIdx--;
-                    let isClone = item.hasClass('clone');
-                    if (itemIdx < 0){
-                      itemIdx = carouselItems-1;
-                      isClone = !isClone;
-                    }
-                    if (isClone){
-                      clone = $('.full-width-carousel-item[data-i="'+itemIdx+'"]:not(.clone)');
-                    }
-                    else{
-                      clone = $('.full-width-carousel-item[data-i="'+itemIdx+'"].clone');
-                    }
-                    clone.css({
-                      left: ((carouselItems-1)*100)+'%'
-                    });
-                  }
-                  else{
-                    if (item.hasClass('clone')){
-                      clone = $('.full-width-carousel-item[data-i="'+itemIdx+'"]:not(.clone)');
-                    }
-                    else{
-                      clone = $('.full-width-carousel-item[data-i="'+itemIdx+'"].clone');
-                    }
-                    clone.css({
-                      left: (-carouselItems*100)+'%'
-                    });
-                  }
-
-                  animating = false;
-                });
-              }
-              else if ($(this).hasClass('current') && !animating && $('body#home').length && $(this).attr('href') != '#'){
-                if ($(this).hasClass('featured-video')){
-                  event.preventDefault();
-
-                  $(this).closest('.full-width-carousel-item').find('.featured-carousel-bg, .full-width-carousel-item-inner').fadeOut(200);
-
-                  //$(this).find('video').addClass('show');
-
-                  let idx = parseInt($(this).find('.responsive_video').attr('data-vid'), 10);
-                  player = _V_("video-"+idx, {"techOrder":["html5","flash","youtube"],"ytcontrols":false});
-                  player.play();
-                }
+            $('.artist-releases.current').fadeOut(function(){
+              $('.a-release-right').removeClass('disabled').show().attr('data-page', page+1);
+              if (page == 1){
+                $('.a-release-left').addClass('disabled').hide();
               }
               else{
-                event.preventDefault();
+                $('.a-release-left').attr('data-page', page-1);
               }
-            });
-          }
-        });
 
-        $('.a-full-width-carousel-left').click(function(event){
+              $('.artist-releases[data-page="'+page+'"]').fadeIn(function(){
+                animating = false;
+              }).addClass('current');
+            }).removeClass('current');
+          }
+        }).hide();
+
+        $('.a-release-right').click(function(event){
           event.preventDefault();
 
-          // Find the one left of the current item.
-          let current = $('.full-width-carousel-item.current');
-          let isClone = current.hasClass('clone');
-          let idx = parseInt(current.attr('data-i'), 10)-1;
-          let item = null;
-          if (idx >= 0 && isClone){
-            item = $('.full-width-carousel-item[data-i="'+idx+'"].clone');
+          if (!animating && !$(this).hasClass('disabled')){
+            console.log('blah2');
+            animating = true;
+            let page = parseInt($(this).attr('data-page'), 10);
+
+            $('.artist-releases.current').fadeOut(function(){
+              $('.a-release-left').removeClass('disabled').show().attr('data-page', page-1);
+              if (page == releasePages){
+                $('.a-release-right').addClass('disabled').hide();
+              }
+              else{
+                $('.a-release-right').attr('data-page', page+1);
+              }
+
+              $('.artist-releases[data-page="'+page+'"]').fadeIn(function(){
+                animating = false;
+              }).addClass('current');
+            }).removeClass('current');
           }
-          else if (idx >= 0){
-            item = $('.full-width-carousel-item[data-i="'+idx+'"]:not(.clone)');
-          }
-          else if (isClone){
-            item = $('.full-width-carousel-item[data-i="'+(carouselItems-1)+'"]:not(.clone)');
-          }
-          else{
-            item = $('.full-width-carousel-item[data-i="'+(carouselItems-1)+'"].clone');
-          }
-          item.trigger('click');
         });
-
-        $('.a-full-width-carousel-right').click(function(event){
-          event.preventDefault();
-
-          // Find the one left of the current item.
-          let current = $('.full-width-carousel-item.current');
-          let isClone = current.hasClass('clone');
-          let idx = parseInt(current.attr('data-i'), 10)+1;
-          let item = null;
-          if (idx < carouselItems && isClone){
-            item = $('.full-width-carousel-item[data-i="'+idx+'"].clone');
-          }
-          else if (idx < carouselItems){
-            item = $('.full-width-carousel-item[data-i="'+idx+'"]:not(.clone)');
-          }
-          else if (isClone){
-            item = $('.full-width-carousel-item[data-i="0"]:not(.clone)');
-          }
-          else{
-            item = $('.full-width-carousel-item[data-i="0"].clone');
-          }
-          item.trigger('click');
-        });
-
-        let hammer = new Hammer($(".full-width-carousel").get(0));
-        hammer.ondragend = function(ev) {
-          // if we moved the slide 100px then navigate
-          if(Math.abs(ev.distance) > 100) {
-            if(ev.direction == 'right') {
-              $('.a-full-width-carousel-left').trigger('click');
-            } else if(ev.direction == 'left') {
-              $('.a-full-width-carousel-right').trigger('click');
-            }
-          }
-        };
       }
 
-      if ($('#tv-video').length){
-        player = _V_("tv-video", {"techOrder":["html5","flash","youtube"],"ytcontrols":false});
-      }
-
-      setTimeout(function(){
-        $('.featured-video .responsive_video').each(function(){
-          let idx = parseInt($(this).attr('data-vid'), 10);
-        });
-      }, 1000);
-
-      // External Links
-      $('a[rel="external"]').click( function(event) {
-        event.stopPropagation();
-        window.open( $(this).attr('href') );
-        return false;
+      $('.release-height').css({
+        minHeight: ($('.right-col-releases').height()+90)+'px'
       });
+
+    }
+    $('.release-links .a-release-link').live('click', function(event){
+      console.log('here');
+      $(this).closest('.release-links').addClass('show');
     });
 
-    function facebookInit(){
-      //put any code here that should wait for the Facebook SDK to load and FB.init() to finish
-      if (console.log){
-        console.log('Facebook ready');
-      }
+    if (typeof EMIBuyButton != 'undefined'){
+      $('body').bind('click', function(event) { EMIBuyButton.hideAllMenus(event); $('.release-links.show').removeClass('show'); });
     }
 
-    function showFormError(error){
-      alert(error);
-    }
 
-    function isEmail(email){
-      return /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$/.test( email );
-    }
+    $('.menu').click(function(event){
+      event.stopPropagation();
+    });
 
-    function reloadStylesheets() {
-        let queryString = '?reload=' + new Date().getTime();
-        $('link[rel="stylesheet"]').each(function () {
-            this.href = this.href.replace(/\?.*|$/, queryString);
+    // Artist carousel.
+    $('.a-carousel-left').click(function(event){
+      event.preventDefault();
+
+      if (!animating){
+        animating = true;
+        $('.artist-carousel-container').animate({
+          scrollLeft: $('.artist-carousel-container').scrollLeft() - $('.central-col').width()
+        }, 400, function(){
+          animating = false;
         });
+      }
+    });
+
+    $('.a-carousel-right').click(function(event){
+      event.preventDefault();
+
+      if (!animating){
+        animating = true;
+        $('.artist-carousel-container').animate({
+          scrollLeft: $('.artist-carousel-container').scrollLeft() + $('.central-col').width()
+        }, 400, function(){
+          animating = false;
+        });
+      }
+    });
+
+    $('.menu-link, .h2-menu-close').click(function(event){
+      event.preventDefault();
+
+      if ($('.menu').position().left === 0){
+        $('.menu').css('left', '-280px');
+      }
+      else{
+        $('.menu').css('left', 0);
+      }
+    });
+
+    $(".menu").hammer({
+      swipe_time: 500,
+      drag: false,
+      tap: false,
+      transform: false
+    }).bind("swipe", function(ev) {
+      if (ev.direction == "left" && $(window).width() < 800) {
+        $('.menu').css('left', '-280px');
+      }
+    });
+
+    $('.a-shop-carousel-right').click(function(event){
+      event.preventDefault();
+
+      if (!animating){
+        animating = true;
+        $('.shop-carousel-container').animate({
+          scrollLeft: '123px'
+        }, 200, function(){
+          $('.shop-carousel-inner a:first-child').appendTo($('.shop-carousel-inner'));
+          $('.shop-carousel-container').scrollLeft(0);
+          animating = false;
+        });
+      }
+    });
+
+    if ($(window).width() < 800){
+      $('.menu').height($(window).height()+100);
     }
+    $(window).resize(function(){
+      $('.artist-carousel-container').scrollLeft(0);
+      if ($(window).width() < 800){
+        $('.menu').height($(window).height());
+      }
+      else{
+        $('.menu').height('auto');
+      }
+    });
+
+    // Subscribe form
+    $('.form-subscribe').submit(function(event){
+      let error = false;
+      let dob = new Date(parseInt($('select[name="year"]').val(), 10), parseInt($('select[name="month"]').val(), 10), parseInt($('select[name="day"]').val(), 10));
+      let thriteenYears = new Date();
+      thriteenYears.setTime(thriteenYears.valueOf() - 13 * 365 * 24 * 60 * 60 * 1000);
+      if ($('input[name="email"]').val() === '' || !isEmail($('input[name="email"]').val())){
+        error = true;
+        $('input[name="email"]').focus();
+        showFormError('You must enter a valid email.');
+      }
+      else if ($('input[name="fname"]').val() === ''){
+        error = true;
+        $('input[name="fname"]').focus();
+        showFormError('You must enter your name.');
+      }
+      else if ($('select[name="country"]').val() === ''){
+        error = true;
+        showFormError('You must select your country.');
+      }
+      else if (isNaN(dob.getTime())){
+        error = true;
+        showFormError('You must enter a valid birthday.');
+      }
+      else if (dob > thriteenYears){
+        error = true;
+        showFormError('You must be older than 13 years old to subscribe.');
+      }
+
+      if (error){
+        event.preventDefault();
+      }
+    });
+
+    // Full width carousel.
+    if ($('.full-width-carousel').length){
+      let i = 0;
+      let vids = 0;
+      carouselItems = $('.full-width-carousel-item').length;
+      $('.full-width-carousel-item:not(.clone)').each(function(){
+        // Don't move the first.
+        if (i > 0){
+          $(this).css({
+            left: (i*100)+'%'
+          });
+        }
+
+        let clone = null;
+        if (carouselItems > 1){
+          // Create a duplicate and place it on the left.
+          clone = $(this).clone().removeClass('current').addClass('clone').css({
+            left: ((i-carouselItems)*100)+'%'
+          });
+          clone.appendTo('.full-width-carousel-dummy');
+        }
+
+        if ($(this).hasClass('featured-video')){
+          $(this).find('.responsive_video').attr('id', 'video-'+vids).attr('data-vid', vids);
+          vids++;
+          if (clone !== null){
+            clone.find('.responsive_video').attr('id', 'video-'+vids).attr('data-vid', vids);
+            vids++;
+          }
+        }
+
+        i++;
+
+        if (i == carouselItems){
+          $('.full-width-carousel-item').click(function(event){
+            if (!animating && !$(this).hasClass('current')){
+              event.preventDefault();
+
+              animating = true;
+
+              let left = $(this).position().left;
+              let width = $(this).width();
+              let move = left / width;
+              let item = $(this);
+              $('.full-width-carousel-dummy').animate({
+                left: -(width*move)+'px'
+              }, 400, function(){
+                $('.full-width-carousel-dummy').css({
+                  left: ''
+                });
+                $('.full-width-carousel-item').each(function(){
+                  let leftItem = $(this).position().left;
+                  let pc = leftItem / width;
+                  $(this).css({
+                    left: ((pc-move)*100)+'%'
+                  });
+                });
+
+                $('.full-width-carousel-item.current').removeClass('current');
+                item.addClass('current');
+
+                // Move the last element to the other side.
+                let itemIdx = item.attr('data-i');
+                let clone = null;
+                if (move > 0){
+                  itemIdx--;
+                  let isClone = item.hasClass('clone');
+                  if (itemIdx < 0){
+                    itemIdx = carouselItems-1;
+                    isClone = !isClone;
+                  }
+                  if (isClone){
+                    clone = $('.full-width-carousel-item[data-i="'+itemIdx+'"]:not(.clone)');
+                  }
+                  else{
+                    clone = $('.full-width-carousel-item[data-i="'+itemIdx+'"].clone');
+                  }
+                  clone.css({
+                    left: ((carouselItems-1)*100)+'%'
+                  });
+                }
+                else{
+                  if (item.hasClass('clone')){
+                    clone = $('.full-width-carousel-item[data-i="'+itemIdx+'"]:not(.clone)');
+                  }
+                  else{
+                    clone = $('.full-width-carousel-item[data-i="'+itemIdx+'"].clone');
+                  }
+                  clone.css({
+                    left: (-carouselItems*100)+'%'
+                  });
+                }
+
+                animating = false;
+              });
+            }
+            else if ($(this).hasClass('current') && !animating && $('body#home').length && $(this).attr('href') != '#'){
+              if ($(this).hasClass('featured-video')){
+                event.preventDefault();
+
+                $(this).closest('.full-width-carousel-item').find('.featured-carousel-bg, .full-width-carousel-item-inner').fadeOut(200);
+
+                //$(this).find('video').addClass('show');
+
+                let idx = parseInt($(this).find('.responsive_video').attr('data-vid'), 10);
+                player = _V_("video-"+idx, {"techOrder":["html5","flash","youtube"],"ytcontrols":false});
+                player.play();
+              }
+            }
+            else{
+              event.preventDefault();
+            }
+          });
+        }
+      });
+
+      $('.a-full-width-carousel-left').click(function(event){
+        event.preventDefault();
+
+        // Find the one left of the current item.
+        let current = $('.full-width-carousel-item.current');
+        let isClone = current.hasClass('clone');
+        let idx = parseInt(current.attr('data-i'), 10)-1;
+        let item = null;
+        if (idx >= 0 && isClone){
+          item = $('.full-width-carousel-item[data-i="'+idx+'"].clone');
+        }
+        else if (idx >= 0){
+          item = $('.full-width-carousel-item[data-i="'+idx+'"]:not(.clone)');
+        }
+        else if (isClone){
+          item = $('.full-width-carousel-item[data-i="'+(carouselItems-1)+'"]:not(.clone)');
+        }
+        else{
+          item = $('.full-width-carousel-item[data-i="'+(carouselItems-1)+'"].clone');
+        }
+        item.trigger('click');
+      });
+
+      $('.a-full-width-carousel-right').click(function(event){
+        event.preventDefault();
+
+        // Find the one left of the current item.
+        let current = $('.full-width-carousel-item.current');
+        let isClone = current.hasClass('clone');
+        let idx = parseInt(current.attr('data-i'), 10)+1;
+        let item = null;
+        if (idx < carouselItems && isClone){
+          item = $('.full-width-carousel-item[data-i="'+idx+'"].clone');
+        }
+        else if (idx < carouselItems){
+          item = $('.full-width-carousel-item[data-i="'+idx+'"]:not(.clone)');
+        }
+        else if (isClone){
+          item = $('.full-width-carousel-item[data-i="0"]:not(.clone)');
+        }
+        else{
+          item = $('.full-width-carousel-item[data-i="0"].clone');
+        }
+        item.trigger('click');
+      });
+
+      let hammer = new Hammer($(".full-width-carousel").get(0));
+      hammer.ondragend = function(ev) {
+        // if we moved the slide 100px then navigate
+        if(Math.abs(ev.distance) > 100) {
+          if(ev.direction == 'right') {
+            $('.a-full-width-carousel-left').trigger('click');
+          } else if(ev.direction == 'left') {
+            $('.a-full-width-carousel-right').trigger('click');
+          }
+        }
+      };
+    }
+
+    if ($('#tv-video').length){
+      player = _V_("tv-video", {"techOrder":["html5","flash","youtube"],"ytcontrols":false});
+    }
+
+    setTimeout(function(){
+      $('.featured-video .responsive_video').each(function(){
+        let idx = parseInt($(this).attr('data-vid'), 10);
+      });
+    }, 1000);
+
+    // External Links
+    $('a[rel="external"]').click( function(event) {
+      event.stopPropagation();
+      window.open( $(this).attr('href') );
+      return false;
+    });
+  });
+
+  function facebookInit(){
+    //put any code here that should wait for the Facebook SDK to load and FB.init() to finish
+    if (console.log){
+      console.log('Facebook ready');
+    }
+  }
+
+  function showFormError(error){
+    alert(error);
+  }
+
+  function isEmail(email){
+    return /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$/.test( email );
+  }
+
+  function reloadStylesheets() {
+      let queryString = '?reload=' + new Date().getTime();
+      $('link[rel="stylesheet"]').each(function () {
+          this.href = this.href.replace(/\?.*|$/, queryString);
+      });
+  }
 </script>
+</div>		
+</div>
